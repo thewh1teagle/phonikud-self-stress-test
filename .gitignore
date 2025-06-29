@@ -1,2 +1,3 @@
 *.onnx
 *.wav
+.DS_Store
