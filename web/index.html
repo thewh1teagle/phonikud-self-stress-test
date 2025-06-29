@@ -270,6 +270,8 @@
                     setTimeout(processBatch, 10);
                 } else {
                     console.log('All rows processed successfully');
+                    // Setup audio control after all elements are created
+                    setupAudioControl();
                 }
             }
             
@@ -303,6 +305,18 @@
                 document.getElementById('error').textContent = 'שגיאה בטעינת הדף: ' + error.message;
                 document.getElementById('error').style.display = 'block';
             }
+        }
+
+        // Prevent several audio files from playing at the same time
+        function setupAudioControl() {
+            const tracks = Array.from(document.querySelectorAll('audio'));
+            tracks.forEach(function(track) {
+                track.addEventListener('play', (event) => {
+                tracks.forEach(function(track) {
+                    if(track !== event.target) track.pause();
+                })
+                })
+            })
         }
 
         // Initialize when page loads
