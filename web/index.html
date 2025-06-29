@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonikud Self Stress Test</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            direction: rtl;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .sentence-row {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+            margin-bottom: 15px;
+        }
+        .sentence-id {
+            font-weight: bold;
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        .columns-section {
+            margin-bottom: 15px;
+        }
+        .column-row {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .column-label {
+            font-weight: bold;
+            color: #666;
+            font-size: 0.9em;
+            min-width: 200px;
+            display: inline-block;
+        }
+        .column-value {
+            color: #333;
+            font-size: 1.1em;
+            word-break: break-word;
+        }
+        .audio-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .audio-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .audio-label {
+            font-size: 0.8em;
+            color: #666;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        audio {
+            width: 200px;
+        }
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+        .error {
+            color: #dc3545;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Phonikud Self Stress Test</h1>
+        <div id="loading" class="loading">טוען נתונים...</div>
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="content"></div>
+    </div>
+
+    <script>
+        // Hardcoded prefixes
+        const prefixes = [
+            'vocalized_phonikud_enhanced',
+            'vocalized_phonikud'
+        ];
+
+        async function loadCSV() {
+            try {
+                console.log('Fetching CSV file...');
+                const response = await fetch('stress_test_sentences.csv');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const csvText = await response.text();
+                console.log('CSV text length:', csvText.length, 'characters');
+                
+                const parsedData = parseCSV(csvText);
+                console.log('Parsed CSV data:', parsedData.length, 'rows');
+                return parsedData;
+            } catch (error) {
+                console.error('Error loading CSV:', error);
+                document.getElementById('error').textContent = 'שגיאה בטעינת קובץ ה-CSV: ' + error.message;
+                document.getElementById('error').style.display = 'block';
+                return [];
+            }
+        }
+
+        function parseCSV(csvText) {
+            const lines = csvText.trim().split('\n');
+            const headers = lines[0].split(',');
+            const rows = [];
+
+            for (let i = 1; i < lines.length; i++) {
+                const values = parseCSVLine(lines[i]);
+                if (values.length === headers.length) {
+                    const row = {};
+                    headers.forEach((header, index) => {
+                        row[header] = values[index];
+                    });
+                    rows.push(row);
+                }
+            }
+            return rows;
+        }
+
+        function parseCSVLine(line) {
+            const result = [];
+            let current = '';
+            let inQuotes = false;
+            
+            for (let i = 0; i < line.length; i++) {
+                const char = line[i];
+                
+                if (char === '"' && (i === 0 || line[i-1] !== '\\')) {
+                    inQuotes = !inQuotes;
+                } else if (char === ',' && !inQuotes) {
+                    result.push(current.trim());
+                    current = '';
+                } else {
+                    current += char;
+                }
+            }
+            
+            result.push(current.trim());
+            return result;
+        }
+
+        function generateAudioElements(csvData) {
+            const contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = '';
+
+            console.log('Processing', csvData.length, 'rows...');
+            
+            // Process rows in batches to prevent memory issues
+            const batchSize = 10;
+            let currentBatch = 0;
+            
+            function processBatch() {
+                const startIndex = currentBatch * batchSize;
+                const endIndex = Math.min(startIndex + batchSize, csvData.length);
+                
+                console.log(`Processing batch ${currentBatch + 1}, rows ${startIndex + 1} to ${endIndex}`);
+                
+                for (let i = startIndex; i < endIndex; i++) {
+                    const row = csvData[i];
+                const sentenceDiv = document.createElement('div');
+                sentenceDiv.className = 'sentence-row';
+
+                // Sentence ID
+                const idDiv = document.createElement('div');
+                idDiv.className = 'sentence-id';
+                idDiv.textContent = `ID: ${row.id}`;
+                sentenceDiv.appendChild(idDiv);
+
+                // Display all columns
+                const columnsDiv = document.createElement('div');
+                columnsDiv.className = 'columns-section';
+                
+                // Display each column (except id which is already shown)
+                Object.keys(row).forEach(column => {
+                    if (column !== 'id' && row[column]) {
+                        const columnDiv = document.createElement('div');
+                        columnDiv.className = 'column-row';
+                        
+                        const columnLabel = document.createElement('span');
+                        columnLabel.className = 'column-label';
+                        columnLabel.textContent = column + ': ';
+                        
+                        const columnValue = document.createElement('span');
+                        columnValue.className = 'column-value';
+                        columnValue.textContent = row[column];
+                        
+                        columnDiv.appendChild(columnLabel);
+                        columnDiv.appendChild(columnValue);
+                        columnsDiv.appendChild(columnDiv);
+                    }
+                });
+                
+                sentenceDiv.appendChild(columnsDiv);
+
+                // Audio section
+                const audioSection = document.createElement('div');
+                audioSection.className = 'audio-section';
+
+                // Generate audio elements for each prefix
+                prefixes.forEach(prefix => {
+                    const audioItem = document.createElement('div');
+                    audioItem.className = 'audio-item';
+
+                    // Audio label
+                    const label = document.createElement('div');
+                    label.className = 'audio-label';
+                    label.textContent = prefix.replace('vocalized_', '').replace('_', ' ');
+                    audioItem.appendChild(label);
+
+                    // Audio element
+                    const audio = document.createElement('audio');
+                    audio.controls = true;
+                    audio.preload = 'metadata';
+                    
+                    // Audio file path: prefix_id.wav
+                    const audioFileName = `${prefix}_${row.id}.m4a`;
+                    audio.src = `audio/${audioFileName}`;
+                    
+                    // Add error handling for missing audio files
+                    audio.addEventListener('error', function() {
+                        console.warn(`Audio file not found: ${audioFileName}`);
+                        this.style.opacity = '0.5';
+                        label.style.color = '#dc3545';
+                        label.title = 'קובץ שמע לא נמצא';
+                    });
+
+                    audioItem.appendChild(audio);
+                    audioSection.appendChild(audioItem);
+                });
+
+                sentenceDiv.appendChild(audioSection);
+                contentDiv.appendChild(sentenceDiv);
+                }
+                
+                currentBatch++;
+                if (currentBatch * batchSize < csvData.length) {
+                    // Process next batch with a small delay to prevent blocking
+                    setTimeout(processBatch, 10);
+                } else {
+                    console.log('All rows processed successfully');
+                }
+            }
+            
+            // Start processing the first batch
+            processBatch();
+        }
+
+        // Load and display data
+        async function init() {
+            try {
+                console.log('Starting initialization...');
+                document.getElementById('loading').style.display = 'block';
+                
+                const csvData = await loadCSV();
+                console.log('CSV data loaded:', csvData.length, 'rows');
+                
+                document.getElementById('loading').style.display = 'none';
+                
+                if (csvData.length > 0) {
+                    console.log('Generating audio elements...');
+                    generateAudioElements(csvData);
+                    console.log('Audio elements generated successfully');
+                } else {
+                    console.warn('No CSV data loaded');
+                    document.getElementById('error').textContent = 'לא נטענו נתונים מקובץ ה-CSV';
+                    document.getElementById('error').style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Error in init:', error);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').textContent = 'שגיאה בטעינת הדף: ' + error.message;
+                document.getElementById('error').style.display = 'block';
+            }
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
