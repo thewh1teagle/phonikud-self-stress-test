@@ -8,23 +8,136 @@ Lower WER values indicate better performance
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import json
+import re
 from pathlib import Path
 
 # Set up matplotlib style  
 plt.style.use('default')
 
-def load_data():
-    """Load and clean the results data 📂"""
-    print("🔍 Loading results data...")
+def count_hebrew_words(text):
+    """Count Hebrew words in text using Unicode range \u0590-\u05f4"""
+    if pd.isna(text) or text == '':
+        return 0
     
-    # Read CSV file
-    df = pd.read_csv('results.csv')
+    # Hebrew character range: \u0590-\u05f4
+    hebrew_pattern = r'[\u0590-\u05f4]+'
+    hebrew_words = re.findall(hebrew_pattern, text)
+    return len(hebrew_words)
+
+def load_and_merge_data():
+    """Load and merge sentence data with WER results 📂"""
+    print("🔍 Loading and merging data...")
+    
+    # Read sentence data
+    sentences_df = pd.read_csv('llm1.csv')
+    print(f"✅ Loaded {len(sentences_df)} sentences from llm1.csv")
+    
+    # Read WER results with error handling for malformed lines
+    try:
+        results_df = pd.read_csv('results.csv', on_bad_lines='skip')
+        print(f"✅ Loaded {len(results_df)} results from results.csv")
+    except Exception as e:
+        print(f"⚠️  Warning reading results.csv: {e}")
+        # Try reading with more permissive settings
+        results_df = pd.read_csv('results.csv', sep=',', on_bad_lines='skip', engine='python')
+        print(f"✅ Loaded {len(results_df)} results from results.csv (with error handling)")
+    
+    # Clean results data
+    print(f"🧹 Cleaning results data...")
+    
+    # Remove duplicate rows (keep first occurrence)
+    results_df = results_df.drop_duplicates(subset=['id'], keep='first')
+    print(f"   Removed duplicates, {len(results_df)} unique results remain")
     
     # Handle missing values in phonikud_enhanced column
-    df['phonikud_enhanced'] = df['phonikud_enhanced'].fillna(0)
+    results_df['phonikud_enhanced'] = results_df['phonikud_enhanced'].fillna(0)
     
-    print(f"✅ Loaded {len(df)} records")
-    return df
+    # Create matching ID format: llm1_1, llm1_2, etc.
+    sentences_df['result_id'] = 'llm1_' + sentences_df['id'].astype(str)
+    
+    # Merge dataframes
+    merged_df = sentences_df.merge(results_df, left_on='result_id', right_on='id', how='inner', suffixes=('', '_result'))
+    print(f"✅ Merged {len(merged_df)} records successfully")
+    
+    # Count Hebrew words in each sentence
+    merged_df['words_count'] = merged_df['phrase'].apply(count_hebrew_words)
+    
+    # Calculate actual WER (Word Error Rate) = incorrect_words_count / total_words_count
+    systems = ['roboshaul_nakdimon', 'phonikud', 'phonikud_enhanced']
+    for system in systems:
+        # Create new column with actual WER values
+        merged_df[f'{system}_wer'] = merged_df.apply(
+            lambda row: row[system] / row['words_count'] if row['words_count'] > 0 else 0, 
+            axis=1
+        )
+    
+    return merged_df
+
+def create_json_report(df):
+    """Create detailed JSON report with per-sentence analysis 📋"""
+    print("\n📝 Creating JSON report...")
+    
+    systems = ['roboshaul_nakdimon', 'phonikud', 'phonikud_enhanced']
+    
+    # Calculate average WER for each system (using calculated WER values)
+    avg_wer = {}
+    for system in systems:
+        wer_column = f'{system}_wer'
+        avg_wer[system] = float(df[wer_column].dropna().mean())
+    
+    # Create detailed report structure
+    report = {
+        "summary": {
+            "total_sentences": len(df),
+            "average_wer": avg_wer,
+            "systems_analyzed": systems
+        },
+        "sentences": []
+    }
+    
+    # Add individual sentence details
+    for _, row in df.iterrows():
+        sentence_data = {
+            "id": row['result_id'],  # Use result_id (llm1_1, llm1_2, etc.) instead of numeric id
+            "sentence": row['phrase'],
+            "words_count": int(row['words_count']),
+            "wer": {}
+        }
+        
+        # Add incorrect word count and calculated WER for each system
+        for system in systems:
+            incorrect_count = row[system]
+            wer_value = row[f'{system}_wer']
+            
+            if pd.notna(incorrect_count) and pd.notna(wer_value):
+                sentence_data["wer"][system] = {
+                    "incorrect_words": int(incorrect_count),
+                    "wer": float(wer_value)
+                }
+            else:
+                sentence_data["wer"][system] = {
+                    "incorrect_words": None,
+                    "wer": None
+                }
+        
+        report["sentences"].append(sentence_data)
+    
+    # Save to JSON file
+    with open('report.json', 'w', encoding='utf-8') as f:
+        json.dump(report, f, ensure_ascii=False, indent=2)
+    
+    print("💾 Saved detailed report as 'report.json'")
+    
+    # Print summary
+    print(f"\n📊 REPORT SUMMARY:")
+    print(f"Total sentences analyzed: {len(df)}")
+    print(f"Average Hebrew words per sentence: {df['words_count'].mean():.1f}")
+    print(f"\nAverage WER by system:")
+    for system, wer in avg_wer.items():
+        print(f"  {system}: {wer:.3f}")
+    
+    return report
 
 def print_summary_stats(df):
     """Print detailed WER summary statistics with emojis 📈"""
@@ -39,16 +152,18 @@ def print_summary_stats(df):
         print(f"\n{emoji} {system.upper().replace('_', ' ')}")
         print("-" * 40)
         
-        values = df[system].dropna()
+        # Use calculated WER values instead of raw incorrect word counts
+        wer_column = f'{system}_wer'
+        values = df[wer_column].dropna()
         mean_wer = values.mean()
         std_wer = values.std()
         min_wer = values.min()
         max_wer = values.max()
         median_wer = values.median()
         
-        print(f"📊 Mean WER: {mean_wer:.2f}")
-        print(f"📏 Std Dev: {std_wer:.2f}")
-        print(f"🎯 Median WER: {median_wer:.2f}")
+        print(f"📊 Mean WER: {mean_wer:.3f}")
+        print(f"📏 Std Dev: {std_wer:.3f}")
+        print(f"🎯 Median WER: {median_wer:.3f}")
         print(f"✅ Best WER: {min_wer} (lower is better)")
         print(f"❌ Worst WER: {max_wer}")
         print(f"🔢 Total Samples: {len(values)}")
@@ -82,7 +197,7 @@ def create_visualizations(df):
     
     # 1. Bar chart of average WER (lower is better)
     plt.figure(figsize=(10, 6))
-    means = [df[system].dropna().mean() for system in systems]
+    means = [df[f'{system}_wer'].dropna().mean() for system in systems]
     system_names = []
     for s in systems:
         name = s.replace('_', ' ').title()
@@ -104,12 +219,14 @@ def create_visualizations(df):
     # Add value labels on bars (WER and Accuracy)
     # Adjust y-axis limits to give more room for labels
     max_wer = max(means)
-    plt.ylim(0, max_wer * 1.3)  # Add 30% more space at the top
+    plt.ylim(0, max_wer * 2.0)  # Double the space at the top for multi-line labels
     
     for bar, mean_val in zip(bars, means):
         height = bar.get_height()
         accuracy = max(0, (1 - mean_val) * 100)  # Convert WER to accuracy percentage
-        plt.text(bar.get_x() + bar.get_width()/2., height + 0.05,
+        # Use a relative offset based on the scale instead of fixed 0.05
+        offset = max_wer * 0.05  # 5% of the maximum WER value
+        plt.text(bar.get_x() + bar.get_width()/2., height + offset,
                 f'WER: {mean_val:.2f}\nAcc: {accuracy:.1f}%', 
                 ha='center', va='bottom', fontweight='bold', fontsize=12)
     
@@ -121,7 +238,7 @@ def create_visualizations(df):
     # 2. Box plot for WER distribution (better for error rate data)
     plt.figure(figsize=(10, 6))
     
-    wer_data = [df[system].dropna() for system in systems]
+    wer_data = [df[f'{system}_wer'].dropna() for system in systems]
     box_plot = plt.boxplot(wer_data, labels=system_names, patch_artist=True)
     
     # Color boxes based on median performance
@@ -150,7 +267,7 @@ def create_visualizations(df):
     
     for system, color in zip(systems, colors):
         success_rates = []
-        scores = df[system].dropna()
+        scores = df[f'{system}_wer'].dropna()
         
         for threshold in thresholds:
             success_rate = (scores <= threshold).mean() * 100
@@ -184,7 +301,7 @@ def print_insights(df):
     print("="*60)
     
     systems = ['roboshaul_nakdimon', 'phonikud', 'phonikud_enhanced']
-    means = [df[system].dropna().mean() for system in systems]
+    means = [df[f'{system}_wer'].dropna().mean() for system in systems]
     
     # Find best and worst performing systems (lower WER is better)
     best_idx = np.argmin(means)
@@ -202,7 +319,7 @@ def print_insights(df):
     print(f"\n🎯 IMPROVEMENT POTENTIAL: {improvement:.2f} WER points ({improvement_pct:.1f}% reduction)")
     
     # Consistency analysis
-    stds = [df[system].dropna().std() for system in systems]
+    stds = [df[f'{system}_wer'].dropna().std() for system in systems]
     most_consistent_idx = np.argmin(stds)
     
     print(f"\n⚖️  MOST CONSISTENT: {systems[most_consistent_idx].replace('_', ' ').title()}")
@@ -214,7 +331,7 @@ def print_insights(df):
     threshold_labels = ["Perfect (0)", "Excellent (≤0.5)", "Good (≤1.0)", "Acceptable (≤2.0)"]
     
     for i, system in enumerate(systems):
-        scores = df[system].dropna()
+        scores = df[f'{system}_wer'].dropna()
         print(f"\n   🔹 {system.replace('_', ' ').title()}:")
         
         for threshold, label in zip(thresholds, threshold_labels):
@@ -235,7 +352,7 @@ def main():
     
     try:
         # Load data
-        df = load_data()
+        df = load_and_merge_data()
         
         # Print summary statistics
         print_summary_stats(df)
@@ -245,6 +362,9 @@ def main():
         
         # Print insights
         print_insights(df)
+        
+        # Create JSON report
+        create_json_report(df)
         
         print("\n" + "="*60)
         print("✅ Analysis Complete! 🎉")
