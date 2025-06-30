@@ -1,10 +1,10 @@
 {
   "summary": {
-    "total_sentences": 218,
+    "total_sentences": 237,
     "average_wer": {
-      "roboshaul_nakdimon": 0.06703320889100704,
-      "phonikud": 0.09151640917695963,
-      "phonikud_enhanced": 0.029194467611898804
+      "roboshaul_nakdimon": 0.06824787964028471,
+      "phonikud": 0.09076829171765881,
+      "phonikud_enhanced": 0.03320821232213637
     },
     "systems_analyzed": [
       "roboshaul_nakdimon",
@@ -4152,6 +4152,367 @@
         "phonikud_enhanced": {
           "incorrect_words": 2,
           "wer": 0.2857142857142857
+        }
+      }
+    },
+    {
+      "id": "llm1_222",
+      "sentence": "במעדניה החדשה יש גבינות מתוצרת אורגנית בלבד",
+      "words_count": 7,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 1,
+          "wer": 0.14285714285714285
+        },
+        "phonikud": {
+          "incorrect_words": 1,
+          "wer": 0.14285714285714285
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 1,
+          "wer": 0.14285714285714285
+        }
+      }
+    },
+    {
+      "id": "llm1_223",
+      "sentence": "הם מחפשים דרך חיים יותר אורגנית ופחות תעשייתית",
+      "words_count": 8,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_224",
+      "sentence": "המסעדה מציעה תפריט המבוסס על תוצרת אורגנית מקומית",
+      "words_count": 8,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "incorrect_words": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_225",
+      "sentence": "בחנות הזו כל המוצרים הם מחקלאות אורגנית",
+      "words_count": 7,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 1,
+          "wer": 0.14285714285714285
+        },
+        "phonikud": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 1,
+          "wer": 0.14285714285714285
+        }
+      }
+    },
+    {
+      "id": "llm1_226",
+      "sentence": "במהלך הסיור הוסבר איך יוצרים קרקע אורגנית עשירה",
+      "words_count": 8,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "incorrect_words": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_227",
+      "sentence": "בחנות הטבע הוצגו עשרות מוצרים בתווית אורגנית",
+      "words_count": 7,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 1,
+          "wer": 0.14285714285714285
+        },
+        "phonikud": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 1,
+          "wer": 0.14285714285714285
+        }
+      }
+    },
+    {
+      "id": "llm1_228",
+      "sentence": "הגינה נבנתה בשיטה אורגנית שמשמרת את המערכת האקולוגית",
+      "words_count": 8,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 2,
+          "wer": 0.25
+        },
+        "phonikud": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_229",
+      "sentence": "העבודה בקבוצה זרמה בצורה אורגנית בזכות הכימיה בין המשתתפים",
+      "words_count": 9,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 2,
+          "wer": 0.2222222222222222
+        },
+        "phonikud": {
+          "incorrect_words": 1,
+          "wer": 0.1111111111111111
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_230",
+      "sentence": "החיבור ביניהם התפתח אורגנית בלי כוונה תחילה",
+      "words_count": 7,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 1,
+          "wer": 0.14285714285714285
+        },
+        "phonikud": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_231",
+      "sentence": "הילד קיבל אורגנית ליום הולדת והתחיל ללמוד לנגן",
+      "words_count": 8,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "incorrect_words": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_232",
+      "sentence": "הם הביאו אורגנית קטנה כדי לנגן בשירה בציבור",
+      "words_count": 8,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_233",
+      "sentence": "האורגנית שלו חוברה לרמקול ונשמעה בכל החדר",
+      "words_count": 7,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 1,
+          "wer": 0.14285714285714285
+        },
+        "phonikud": {
+          "incorrect_words": 2,
+          "wer": 0.2857142857142857
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_234",
+      "sentence": "היא כתבה שיר חדש וניגנה אותו על אורגנית",
+      "words_count": 8,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "incorrect_words": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_235",
+      "sentence": "הוא אהב את הצליל החם של האורגנית הישנה",
+      "words_count": 8,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_236",
+      "sentence": "הם קנו אורגנית יד שנייה ותרגלו נגינה כל יום",
+      "words_count": 9,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "incorrect_words": 1,
+          "wer": 0.1111111111111111
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_237",
+      "sentence": "האורגנית החשמלית משמשת אותו גם להקלטות",
+      "words_count": 6,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 1,
+          "wer": 0.16666666666666666
+        }
+      }
+    },
+    {
+      "id": "llm1_238",
+      "sentence": "המוזיקאית עלתה לבמה עם אורגנית קטנה וניידת",
+      "words_count": 7,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "incorrect_words": 2,
+          "wer": 0.2857142857142857
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 2,
+          "wer": 0.2857142857142857
+        }
+      }
+    },
+    {
+      "id": "llm1_239",
+      "sentence": "המורה הסביר על הבדלים בין פסנתר רגיל לאורגנית",
+      "words_count": 8,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "incorrect_words": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_240",
+      "sentence": "הילדים ניגשו אחד אחד לנסות לנגן על האורגנית",
+      "words_count": 8,
+      "wer": {
+        "roboshaul_nakdimon": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "incorrect_words": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "incorrect_words": 1,
+          "wer": 0.125
         }
       }
     }
