@@ -11,6 +11,7 @@ import numpy as np
 import json
 import re
 from pathlib import Path
+from math import pi
 
 # Set up matplotlib style  
 plt.style.use('default')
@@ -151,6 +152,7 @@ def print_summary_stats(df):
     for system, emoji in zip(systems, system_emojis):
         print(f"\n{emoji} {system.upper().replace('_', ' ')}")
         print("-" * 40)
+
         
         # Use calculated WER values instead of raw incorrect word counts
         wer_column = f'{system}_wer'
@@ -189,13 +191,12 @@ def print_summary_stats(df):
             print(f"   WER {wer}: {count:3d} ({percentage:5.1f}%) {bar} {quality}")
 
 def create_visualizations(df):
-    """Create WER-appropriate visualizations 📈"""
-    print("\n🎨 Creating WER visualizations...")
+    """Create WER visualization 📈"""
+    print("\n🎨 Creating WER visualization...")
     
     systems = ['roboshaul_nakdimon', 'phonikud', 'phonikud_enhanced']
-    colors = ['#2E8B57', '#4169E1', '#DC143C']  # Green, Blue, Red
     
-    # 1. Bar chart of average WER (lower is better)
+    # Bar chart of average WER (lower is better)
     plt.figure(figsize=(10, 6))
     means = [df[f'{system}_wer'].dropna().mean() for system in systems]
     system_names = []
@@ -205,29 +206,50 @@ def create_visualizations(df):
             name += ' (ours)'
         system_names.append(name)
     
-    # Color bars based on performance (green=best, red=worst)
-    sorted_indices = np.argsort(means)
-    bar_colors = ['green' if i == sorted_indices[0] else 'orange' if i == sorted_indices[1] else 'red' 
-                  for i in range(len(means))]
+    # Sort systems with roboshaul at the end
+    # First, get phonikud systems sorted by performance
+    phonikud_data = [(mean, name) for mean, name in zip(means, system_names) if 'roboshaul' not in name.lower()]
+    roboshaul_data = [(mean, name) for mean, name in zip(means, system_names) if 'roboshaul' in name.lower()]
     
-    bars = plt.bar(system_names, means, color=bar_colors, alpha=0.7, edgecolor='black')
+    # Sort phonikud systems by performance (best to worst)
+    phonikud_sorted = sorted(phonikud_data, key=lambda x: x[0])
+    
+    # Combine: phonikud systems first, then roboshaul
+    sorted_data = phonikud_sorted + roboshaul_data
+    sorted_means, sorted_names = zip(*sorted_data)
+    
+    # Color bars based on WER performance
+    # Find the best, middle, and worst WER values
+    all_wers = list(sorted_means)
+    best_wer = min(all_wers)
+    worst_wer = max(all_wers)
+    
+    bar_colors = []
+    for wer_val in sorted_means:
+        if wer_val == best_wer:
+            bar_colors.append('green')  # Best WER
+        elif wer_val == worst_wer:
+            bar_colors.append('yellow')  # Worst WER (roboshaul)
+        else:
+            bar_colors.append('red')  # Middle WER
+    
+    bars = plt.bar(sorted_names, sorted_means, color=bar_colors, alpha=0.7, edgecolor='black')
     plt.ylabel('← Word Error Rate (WER)', fontsize=12)
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.grid(True, alpha=0.3, axis='y')
     
-    # Add value labels on bars (WER and Accuracy)
+    # Add value labels on bars
     # Adjust y-axis limits to give more room for labels
-    max_wer = max(means)
-    plt.ylim(0, max_wer * 2.0)  # Double the space at the top for multi-line labels
+    max_wer = max(sorted_means)
+    plt.ylim(0, max_wer * 2.0)  # Double the space at the top for labels
     
-    for bar, mean_val in zip(bars, means):
+    for bar, mean_val in zip(bars, sorted_means):
         height = bar.get_height()
-        accuracy = max(0, (1 - mean_val) * 100)  # Convert WER to accuracy percentage
         # Use a relative offset based on the scale instead of fixed 0.05
         offset = max_wer * 0.05  # 5% of the maximum WER value
         plt.text(bar.get_x() + bar.get_width()/2., height + offset,
-                f'WER: {mean_val:.2f}\nAcc: {accuracy:.1f}%', 
+                f'{mean_val:.2f}', 
                 ha='center', va='bottom', fontweight='bold', fontsize=12)
     
     plt.tight_layout()
@@ -235,64 +257,95 @@ def create_visualizations(df):
     print("💾 Saved WER comparison as 'wer_comparison.png'")
     plt.show()
     
-    # 2. Box plot for WER distribution (better for error rate data)
-    plt.figure(figsize=(10, 6))
+    print("✅ WER plot created successfully!")
+
+def create_outstanding_visualizations(df):
+    """Create improved excellence visualization that makes the BEST performer visually outstanding! 🏆"""
+    print("\n✨ Creating outstanding WER excellence visualization...")
     
-    wer_data = [df[f'{system}_wer'].dropna() for system in systems]
-    box_plot = plt.boxplot(wer_data, labels=system_names, patch_artist=True)
+    systems = ['roboshaul_nakdimon', 'phonikud', 'phonikud_enhanced']
     
-    # Color boxes based on median performance
-    medians = [data.median() for data in wer_data]
-    sorted_med_indices = np.argsort(medians)
-    box_colors = ['lightgreen' if i == sorted_med_indices[0] else 'lightblue' if i == sorted_med_indices[1] else 'lightcoral' 
-                  for i in range(len(medians))]
+    # Get the data
+    means = [df[f'{system}_wer'].dropna().mean() for system in systems]
+    system_names = []
+    for s in systems:
+        name = s.replace('_', ' ').title()
+        if 'phonikud' in s.lower():
+            name += ' ⭐'  # Mark your systems
+        system_names.append(name)
     
-    for patch, color in zip(box_plot['boxes'], box_colors):
-        patch.set_facecolor(color)
-        patch.set_alpha(0.7)
+    # IMPROVED INVERTED WER BAR CHART - Shows "how much BETTER" each system is
+    plt.figure(figsize=(14, 8))
     
-    plt.title('📦 WER Distribution by System (Lower is Better)', fontsize=14, fontweight='bold')
-    plt.ylabel('Word Error Rate (WER)')
-    plt.grid(True, alpha=0.3, axis='y')
+    # Calculate "excellence score" = max_wer - current_wer (higher is better)
+    max_wer = max(means)
+    excellence_scores = [max_wer - wer for wer in means]
     
+    # Create horizontal bar chart with improved styling
+    bars = plt.barh(system_names, excellence_scores, height=0.6,
+                    color=['#FFD700' if 'phonikud' in name.lower() else '#B0B0B0' for name in system_names],
+                    edgecolor='#333333', linewidth=2, alpha=0.9)
+    
+    # Make the best one really stand out with gradient effect
+    best_idx = np.argmax(excellence_scores)
+    bars[best_idx].set_color('#FFD700')  # Gold for winner
+    bars[best_idx].set_alpha(1.0)
+    bars[best_idx].set_linewidth(3)
+    bars[best_idx].set_edgecolor('#B8860B')  # Dark gold edge
+    
+    # Style the non-winners more subtly
+    for i, bar in enumerate(bars):
+        if i != best_idx:
+            bar.set_color('#D3D3D3')  # Light gray
+            bar.set_alpha(0.7)
+    
+    # Clean axis styling
+    plt.xlabel('Excellence Score (Higher = Better Performance)', fontsize=16, fontweight='bold', color='#333333')
+    plt.gca().spines['top'].set_visible(False)
+    plt.gca().spines['right'].set_visible(False)
+    plt.gca().spines['left'].set_linewidth(0.5)
+    plt.gca().spines['bottom'].set_linewidth(0.5)
+    
+    # Improved value labels with better positioning
+    max_score = max(excellence_scores)
+    for i, (bar, score, wer) in enumerate(zip(bars, excellence_scores, means)):
+        width = bar.get_width()
+        y_pos = bar.get_y() + bar.get_height()/2
+        
+        # Position labels smartly
+        if width > max_score * 0.6:  # If bar is long, put label inside
+            label_x = width - max_score * 0.05
+            ha = 'right'
+            color = '#333333' if i == best_idx else '#666666'
+        else:  # If bar is short, put label outside
+            label_x = width + max_score * 0.02
+            ha = 'left'
+            color = '#333333'
+        
+        plt.text(label_x, y_pos,
+                f'WER: {wer:.3f}\nExcellence: {score:.3f}', 
+                ha=ha, va='center', fontweight='bold', fontsize=12, color=color)
+        
+        # Add winner badge for the best
+        if i == best_idx:
+            plt.text(width + max_score * 0.15, y_pos, 
+                    '🏆', ha='left', va='center', fontsize=20)
+    
+    # Subtle grid
+    plt.grid(True, alpha=0.2, axis='x', linestyle='--')
+    
+    # Better spacing and layout
+    plt.gca().invert_yaxis()  # Best performer at top
+    plt.margins(x=0.15)  # Add margin for labels
     plt.tight_layout()
-    plt.savefig('wer_distribution.png', dpi=300, bbox_inches='tight')
-    print("💾 Saved WER distribution as 'wer_distribution.png'")
+    
+    # Save with higher quality
+    plt.savefig('wer_excellence_chart.png', dpi=300, bbox_inches='tight', 
+                facecolor='white', edgecolor='none')
+    print("💾 Saved improved excellence chart as 'wer_excellence_chart.png'")
     plt.show()
     
-    # 3. Success rate plot (percentage of samples with WER <= threshold)
-    plt.figure(figsize=(10, 6))
-    
-    thresholds = [0, 0.5, 1.0, 1.5, 2.0]
-    
-    for system, color in zip(systems, colors):
-        success_rates = []
-        scores = df[f'{system}_wer'].dropna()
-        
-        for threshold in thresholds:
-            success_rate = (scores <= threshold).mean() * 100
-            success_rates.append(success_rate)
-        
-        plt.plot(thresholds, success_rates, 'o-', color=color, linewidth=2, 
-                label=system.replace('_', ' ').title(), markersize=6)
-    
-    plt.title('🎯 Success Rate vs WER Threshold', fontsize=14, fontweight='bold')
-    plt.xlabel('WER Threshold')
-    plt.ylabel('Success Rate (%)')
-    plt.legend()
-    plt.grid(True, alpha=0.3)
-    plt.ylim(0, 105)
-    
-    # Add percentage labels
-    for i, threshold in enumerate(thresholds):
-        plt.axvline(x=threshold, color='gray', linestyle=':', alpha=0.3)
-    
-    plt.tight_layout()
-    plt.savefig('wer_success_rate.png', dpi=300, bbox_inches='tight')
-    print("💾 Saved success rate plot as 'wer_success_rate.png'")
-    plt.show()
-    
-    print("✅ All WER plots created successfully!")
+    print("🎉 Outstanding visualization created successfully!")
 
 def print_insights(df):
     """Print key insights and recommendations for WER data 💡"""
