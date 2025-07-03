@@ -8,7 +8,7 @@ https://huggingface.co/thewh1teagle/phonikud-experiments/tree/main/comparison/au
 
 mkdir -p ./web/audio
 
-for f in ./roboshaul/*.wav; do
+for f in ./wav/*.wav; do
   filename=$(basename "$f" .wav)
   ffmpeg -i "$f" -c:a aac -b:a 128k "./web/audio/${filename}.m4a"
 done
