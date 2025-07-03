@@ -4,7 +4,7 @@
     "average_wer": {
       "roboshaul_nakdimon": 0.06824787964028471,
       "phonikud": 0.09076829171765881,
-      "phonikud_enhanced": 0.03320821232213637
+      "phonikud_enhanced": 0.03381098507680786
     },
     "systems_analyzed": [
       "roboshaul_nakdimon",
@@ -711,8 +711,8 @@
           "wer": 0.14285714285714285
         },
         "phonikud_enhanced": {
-          "incorrect_words": 0,
-          "wer": 0.0
+          "incorrect_words": 1,
+          "wer": 0.14285714285714285
         }
       }
     },
