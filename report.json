@@ -2,16 +2,16 @@
   "summary": {
     "total_sentences": 250,
     "total_errors": {
-      "phonikud": 156,
-      "phonikud_enhanced": 59,
-      "saspeech-nakdimon": 72,
-      "mms-nakdimon": 168
+      "roboshaul_nakdimon": 131,
+      "phonikud": 173,
+      "phonikud_enhanced": 63,
+      "phonikud_enhanced_text": 81
     },
     "average_wer": {
-      "phonikud": 1.2380952380952381,
-      "phonikud_enhanced": 0.46825396825396826,
-      "saspeech-nakdimon": 0.5714285714285714,
-      "mms-nakdimon": 1.3333333333333333
+      "roboshaul_nakdimon": 1.0396825396825398,
+      "phonikud": 1.373015873015873,
+      "phonikud_enhanced": 0.5,
+      "phonikud_enhanced_text": 0.6428571428571429
     }
   },
   "sentences": [
@@ -20,6 +20,10 @@
       "sentence": "בְּֽעִיקְּבוֹת הַ|יְּשִׁיבָה הַ|הִיא הֻוחְלַט עַל הֲטָלַת סֶ֫גֶר עַל יִשְׂרָאֵל",
       "word_count": 11,
       "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.0909
+        },
         "phonikud": {
           "errors": 0,
           "wer": 0.0
@@ -28,13 +32,9 @@
           "errors": 0,
           "wer": 0.0
         },
-        "saspeech-nakdimon": {
+        "phonikud_enhanced_text": {
           "errors": 0,
           "wer": 0.0
-        },
-        "mms-nakdimon": {
-          "errors": 2,
-          "wer": 0.1818
         }
       }
     },
@@ -43,6 +43,10 @@
       "sentence": "אָה זֶה דֵּי מַדְהִים לִרְאוֹת לִרְאוֹת אֶת זֶה לְֽאוֹר יוֹם",
       "word_count": 10,
       "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
         "phonikud": {
           "errors": 0,
           "wer": 0.0
@@ -51,11 +55,7 @@
           "errors": 0,
           "wer": 0.0
         },
-        "saspeech-nakdimon": {
-          "errors": 0,
-          "wer": 0.0
-        },
-        "mms-nakdimon": {
+        "phonikud_enhanced_text": {
           "errors": 0,
           "wer": 0.0
         }
@@ -66,19 +66,19 @@
       "sentence": "הוּא אֶחָד מִיִּיזְּמֵי הַ|הַיְיטֵק הַ|וָּותִיקִים שֶׁ|יֵּשׁ לָנוּ",
       "word_count": 10,
       "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
         "phonikud": {
-          "errors": 1,
-          "wer": 0.1
+          "errors": 0,
+          "wer": 0.0
         },
         "phonikud_enhanced": {
-          "errors": 1,
-          "wer": 0.1
+          "errors": 0,
+          "wer": 0.0
         },
-        "saspeech-nakdimon": {
-          "errors": 1,
-          "wer": 0.1
-        },
-        "mms-nakdimon": {
+        "phonikud_enhanced_text": {
           "errors": 1,
           "wer": 0.1
         }
@@ -89,6 +89,10 @@
       "sentence": "נִמְאַס לִי לַחֲלוּטִין לַעֲמֹוד בַּ|פְּקָקִים נִמְאַס לִי מֵהַ|לַּ֫חַץ נִמְאַס לִי מֵ|חִיפּוּשֵׂי הַ|חֲנָיָיה פָּשׁוּט נִמְאַס לִי",
       "word_count": 19,
       "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.0526
+        },
         "phonikud": {
           "errors": 1,
           "wer": 0.0526
@@ -97,11 +101,7 @@
           "errors": 0,
           "wer": 0.0
         },
-        "saspeech-nakdimon": {
-          "errors": 0,
-          "wer": 0.0
-        },
-        "mms-nakdimon": {
+        "phonikud_enhanced_text": {
           "errors": 0,
           "wer": 0.0
         }
@@ -112,6 +112,10 @@
       "sentence": "עוֹד שְׁנִיָּיה יִהְיֶה לָהּ מָקוֹם חָדָשׁ לִקְרֹוא לוֹ בַּ֫יִת",
       "word_count": 9,
       "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
         "phonikud": {
           "errors": 0,
           "wer": 0.0
@@ -120,13 +124,9 @@
           "errors": 0,
           "wer": 0.0
         },
-        "saspeech-nakdimon": {
-          "errors": 1,
-          "wer": 0.1111
-        },
-        "mms-nakdimon": {
-          "errors": 1,
-          "wer": 0.1111
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
         }
       }
     },
@@ -135,6 +135,10 @@
       "sentence": "אוֹקֵיי אָז בּוֹא נֵלֵךְ מֵהַ|קַּל אֶל הַ|כָּבֵד בַּ|חֵ֫לֶק הַ|קַּל עַל אַף שֶׁ|כְּבָר עַכְשָׁיו הַ|טֶּכְנוֹל֫וֹגְיָה מְֽאוֹד מְֽאוֹד מַרְשִׁימָה",
       "word_count": 23,
       "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
         "phonikud": {
           "errors": 0,
           "wer": 0.0
@@ -143,13 +147,9 @@
           "errors": 0,
           "wer": 0.0
         },
-        "saspeech-nakdimon": {
+        "phonikud_enhanced_text": {
           "errors": 0,
           "wer": 0.0
-        },
-        "mms-nakdimon": {
-          "errors": 1,
-          "wer": 0.0435
         }
       }
     },
@@ -158,6 +158,10 @@
       "sentence": "בַּ|מַּעֲרֶ֫כֶת חַיּוֹת כִּיס חֲבֵרוֹת גַּם דָּנָה פְרַנְק וּ|צְלִיל אַבְרָהָם",
       "word_count": 11,
       "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
         "phonikud": {
           "errors": 1,
           "wer": 0.0909
@@ -166,13 +170,9 @@
           "errors": 0,
           "wer": 0.0
         },
-        "saspeech-nakdimon": {
+        "phonikud_enhanced_text": {
           "errors": 0,
           "wer": 0.0
-        },
-        "mms-nakdimon": {
-          "errors": 2,
-          "wer": 0.1818
         }
       }
     },
@@ -181,6 +181,10 @@
       "sentence": "אוּלַי הוּא יְֽשַׁכְנֵעַ גַּם אֶתְכֶם לְֽהִצְטָרֵף לָ|עִיגּוּל לְֽ|טוֹבָה",
       "word_count": 10,
       "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
         "phonikud": {
           "errors": 0,
           "wer": 0.0
@@ -189,13 +193,9 @@
           "errors": 0,
           "wer": 0.0
         },
-        "saspeech-nakdimon": {
+        "phonikud_enhanced_text": {
           "errors": 0,
           "wer": 0.0
-        },
-        "mms-nakdimon": {
-          "errors": 1,
-          "wer": 0.1
         }
       }
     },
@@ -204,6 +204,10 @@
       "sentence": "וְֽ|הוּא מְֽשַׁמֵּשׁ בְּֽתוֹר יוֹשֵׁב הָ|רֹאשׁ שֶׁלָּהּ עַד הַיּוֹם",
       "word_count": 10,
       "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
         "phonikud": {
           "errors": 0,
           "wer": 0.0
@@ -212,11 +216,7 @@
           "errors": 0,
           "wer": 0.0
         },
-        "saspeech-nakdimon": {
-          "errors": 0,
-          "wer": 0.0
-        },
-        "mms-nakdimon": {
+        "phonikud_enhanced_text": {
           "errors": 0,
           "wer": 0.0
         }
@@ -227,6 +227,10 @@
       "sentence": "פָּשׁוּט כִּי הָ|אִינְפְלַ֫צְיָה כָּאן הִיא עֲדַ֫יִין נְֽמוּכָה בְּֽ|יַ֫חַס לִ|מְדִינוֹת אֲחֵרוֹת",
       "word_count": 13,
       "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
         "phonikud": {
           "errors": 2,
           "wer": 0.1538
@@ -235,11 +239,7 @@
           "errors": 0,
           "wer": 0.0
         },
-        "saspeech-nakdimon": {
-          "errors": 0,
-          "wer": 0.0
-        },
-        "mms-nakdimon": {
+        "phonikud_enhanced_text": {
           "errors": 0,
           "wer": 0.0
         }

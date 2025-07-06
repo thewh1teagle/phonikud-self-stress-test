@@ -2,7 +2,7 @@ import pandas as pd
 import re
 import json
 
-target_csv = 'data/result_kobi.csv'
+target_csv = 'data/result_yakov.csv'
 
 def count_hebrew_words(text):
     """Count Hebrew words in text using Unicode range \u0590-\u05f4"""
