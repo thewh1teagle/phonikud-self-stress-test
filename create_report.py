@@ -35,6 +35,7 @@ def main():
     report = {
         'summary': {
             'total_sentences': len(sentences),
+            'total_words': total_words,
             'total_errors': total_errors,
             'average_wer': average_wer
         },

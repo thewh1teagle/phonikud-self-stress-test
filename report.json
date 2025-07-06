@@ -1,6 +1,7 @@
 {
   "summary": {
     "total_sentences": 250,
+    "total_words": 2033,
     "total_errors": {
       "roboshaul_nakdimon": 131,
       "phonikud": 173,
