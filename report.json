@@ -8,13 +8,5533 @@
       "phonikud_enhanced_text": 81
     },
     "average_wer": {
-      "roboshaul_nakdimon": 1.0396825396825398,
-      "phonikud": 1.373015873015873,
-      "phonikud_enhanced": 0.5,
-      "phonikud_enhanced_text": 0.6428571428571429
+      "roboshaul_nakdimon": 0.06443679291687161,
+      "phonikud": 0.08509591736350221,
+      "phonikud_enhanced": 0.030988686669945892,
+      "phonikud_enhanced_text": 0.03984259714707329
     }
   },
   "sentences": [
+    {
+      "id": "llm1_1",
+      "sentence": "שמתי קצת תרד טרי בתוך הפשטידה.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_2",
+      "sentence": "כדאי להוסיף לתרד טיפה של לימון לפני ההגשה.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_3",
+      "sentence": "אמא שלי מכינה סלט עדשים עם תרד ועגבניות מיובשות.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced_text": {
+          "errors": 2,
+          "wer": 0.2222
+        }
+      }
+    },
+    {
+      "id": "llm1_4",
+      "sentence": "בתרד יש הרבה ברזל, מה שטוב למי שסובל מאנמיה.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.2222
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_5",
+      "sentence": "אני מגדל תרד בגינה הקטנה שמאחורי הבית.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_6",
+      "sentence": "יש במסעדה הזו פסטה מעולה עם רוטב שמנת ותרד.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1111
+        }
+      }
+    },
+    {
+      "id": "llm1_7",
+      "sentence": "עדיף לבשל את התרד רק כמה דקות, אחרת הוא מאבד מהערך התזונתי.",
+      "word_count": 12,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.0833
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.0833
+        }
+      }
+    },
+    {
+      "id": "llm1_8",
+      "sentence": "לא היה תרד בסופר, אז קניתי כרוב עלים במקום.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_9",
+      "sentence": "כשהיא הייתה קטנה, היא חשבה שתרד זה מה שפופאי אוכל.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud_enhanced_text": {
+          "errors": 2,
+          "wer": 0.2
+        }
+      }
+    },
+    {
+      "id": "llm1_10",
+      "sentence": "אל תשכח להפשיר את התרד הקפוא לפני השימוש.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_11",
+      "sentence": "הכנתי פשטידת תרד עם בולגרית ובצק עלים.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_12",
+      "sentence": "נשאר קצת מהתרד של אתמול.",
+      "word_count": 5,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.2
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_13",
+      "sentence": "אני מוסיף לתרד גם שום וגרידת לימון – זה עושה פלאים.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1
+        }
+      }
+    },
+    {
+      "id": "llm1_14",
+      "sentence": "בתרד יש הרבה ברזל, אבל לא תמיד הוא נספג טוב.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_15",
+      "sentence": "לתרד יש טעם עדין שמתאים כמעט לכל תבשיל.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_16",
+      "sentence": "אל תרד אין לי אלרגיה, אבל למנגולד כן.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.25
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.25
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_17",
+      "sentence": "יש במקרר שאריות מתרד מבושל מאתמול.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1667
+        }
+      }
+    },
+    {
+      "id": "llm1_18",
+      "sentence": "הבצק ממולא בתרד ובצל מטוגן.",
+      "word_count": 5,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.2
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.2
+        }
+      }
+    },
+    {
+      "id": "llm1_19",
+      "sentence": "אתמול הכנו שייק ירוק עם תרד, תפוח ולימון.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_20",
+      "sentence": "במרק הזה יש תרד, חומוס וקינואה.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.3333
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.3333
+        },
+        "phonikud_enhanced": {
+          "errors": 2,
+          "wer": 0.3333
+        },
+        "phonikud_enhanced_text": {
+          "errors": 3,
+          "wer": 0.5
+        }
+      }
+    },
+    {
+      "id": "llm1_21",
+      "sentence": "אני מקווה שלא תרד ברמה אחרי ההצלחה הזאת.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_22",
+      "sentence": "כשתרד מהאוטובוס, תחכה לי בתחנה.",
+      "word_count": 5,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.2
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.2
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_23",
+      "sentence": "שלא תרד על עצמך כל כך – עשית כמיטב יכולתך.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_24",
+      "sentence": "וכשתרד דרומה, תוכל לבקר את המשפחה שלי באילת.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_25",
+      "sentence": "תרד בבקשה מהמיטה, צריך להחליף מצעים.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_26",
+      "sentence": "רק אל תרד לרמה שלהם, זה לא שווה את זה.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_27",
+      "sentence": "אל תרד לבד למרתף – החשמל מקולקל.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_28",
+      "sentence": "תרד מהרעיון הזה – הוא לא ישים כרגע.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_29",
+      "sentence": "אל תרד לרמה שלו, שמור על כבודך.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_30",
+      "sentence": "אם אתה מתעייף, פשוט תרד מהאופניים ותנוח.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_31",
+      "sentence": "ברגע שתבין שהוא לא רוצה – היא תרד מזה.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_32",
+      "sentence": "אל תרד לפרטים מיותרים, דבר תכלס.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.3333
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.3333
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_33",
+      "sentence": "תרד לקרקע המציאות, זה לא יקרה.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1667
+        }
+      }
+    },
+    {
+      "id": "llm1_34",
+      "sentence": "הקבוצה תרד ליגה אם תפסיד שוב.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.3333
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1667
+        }
+      }
+    },
+    {
+      "id": "llm1_35",
+      "sentence": "אני מבקש שתרד איתי לדבר רגע מחוץ לחדר.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.25
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_36",
+      "sentence": "ותרד סוף־סוף מהנושא הזה, כבר דיברנו עליו מספיק.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.25
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_37",
+      "sentence": "תרד במעלית רק עד הקומה הראשונה, משם נלך ברגל.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_38",
+      "sentence": "תרד למטה לבדוק אם השליח כבר הגיע.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_39",
+      "sentence": "תרד לזרוק את הזבל לפני שהריח יתפשט בכל הבית.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_40",
+      "sentence": "תרד מהרעיון הזה, זה פשוט לא מתאים לתקציב שלנו.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_41",
+      "sentence": "יש משהו בילדות שממשיך לחיות בנו גם כשאנחנו גדלים.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 3,
+          "wer": 0.3333
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_42",
+      "sentence": "הכאב ההוא נשאר בנו הרבה אחרי שהכול נגמר.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_43",
+      "sentence": "לפעמים יש פחד קטן כזה שמסתתר בנו בלי שנרגיש.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2222
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_44",
+      "sentence": "השאלה הזו יושבת בנו כבר הרבה זמן.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_45",
+      "sentence": "לא תמיד אנחנו מבינים מה מתרחש בנו באמת.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_47",
+      "sentence": "התקווה הזו מתעוררת בנו בכל פעם שאנחנו מתחילים משהו חדש.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_48",
+      "sentence": "הזיכרונות ההם חיים בנו גם אם לא מדברים עליהם.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_49",
+      "sentence": "משהו בנאום הזה נגע בנו וגרם לנו לחשוב אחרת.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.2222
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2222
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1111
+        }
+      }
+    },
+    {
+      "id": "llm1_50",
+      "sentence": "הכוחות האלה לא הגיעו מבחוץ, הם תמיד היו בנו.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_51",
+      "sentence": "גם אחרי כל מה שעברנו, נשאר בנו גרעין של אמונה.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_52",
+      "sentence": "משהו בנו לא נותן לנו לוותר.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.3333
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.3333
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_53",
+      "sentence": "יש תחושת שליחות שממש בוערת בנו לאחרונה.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_54",
+      "sentence": "הביטחון הזה צמח בנו עם הזמן.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_55",
+      "sentence": "הכאב הזה לא שוכן רק בזיכרון – הוא חי ממש בנו.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_56",
+      "sentence": "האהבה הזו עדיין קיימת איפשהו בנו, גם אם לא נודה בזה",
+      "word_count": 11,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.0909
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_56",
+      "sentence": "האהבה הזו עדיין קיימת איפשהו בנו, גם אם לא נודה בזה",
+      "word_count": 11,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.0909
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.1818
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_57",
+      "sentence": "בזמנים שבהם הראש מתבלבל – אנחנו עוצרים לרגע, ונזכרים בשקט שבנו.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud": {
+          "errors": 3,
+          "wer": 0.3
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_58",
+      "sentence": "אנחנו לוקחים נשימה עמוקה, ונזכרים באומץ שבנו שלא נעלם.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.2222
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_59",
+      "sentence": "בהם שוררת סערה, ובנו שוכן שקט רגוע  עמוק.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_60",
+      "sentence": "בחוויות שהם חולקים בהם יש הרבה רעש, ואילו בחוויות שלנו ובנו יש שקט רב.",
+      "word_count": 14,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.0714
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.0714
+        }
+      }
+    },
+    {
+      "id": "llm1_61",
+      "sentence": "האדריכלים בנו את הבית במהירות ובמקצועיות רבה.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_62",
+      "sentence": "האחים בנו יחד צימר קטן ליד הנחל.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_63",
+      "sentence": "בנו עוד קומה בבניין כי כבר לא היה מקום.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1111
+        }
+      }
+    },
+    {
+      "id": "llm1_64",
+      "sentence": "בנו את התחנה הזו בשנות החמישים והיא עדיין פעילה.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1111
+        }
+      }
+    },
+    {
+      "id": "llm1_65",
+      "sentence": "המתנדבים בנו גשר עץ זמני כדי שנוכל לעבור.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_66",
+      "sentence": "לפני החורף בנו סככה חדשה לרכב.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_67",
+      "sentence": "בנו כיתה נוספת כי מספר התלמידים עלה.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_68",
+      "sentence": "המהנדסים בנו מערכת ניקוז חכמה במיוחד.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_69",
+      "sentence": "השכנים בנו גדר גבוהה בלי לשאול אף אחד.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_70",
+      "sentence": "בנו את המגרש הזה לפני עשרים שנה, ומאז לא שיפצו אותו.",
+      "word_count": 11,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.0909
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.0909
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.0909
+        }
+      }
+    },
+    {
+      "id": "llm1_71",
+      "sentence": "בנו גשר תלוי על מנת לחבר בין שני האזורים בעיר.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1
+        }
+      }
+    },
+    {
+      "id": "llm1_72",
+      "sentence": "הם בנו אולם ספורט ענק ליד בית הספר התיכון.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_73",
+      "sentence": "בנו במה מאולתרת ממש ערב לפני ההופעה.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_74",
+      "sentence": "הם בנו את העסק שלהם מאפס, בלי עזרה מאף אחד.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_75",
+      "sentence": "בנו את כל האזור הזה על חורבות של שכונה ישנה.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_76",
+      "sentence": "הילדים בנו סוכה לבד בלי עזרה של ההורים",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_77",
+      "sentence": "כשבנו את הבית, עוד לא ידעו אם בכלל יגורו בו.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.2
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_78",
+      "sentence": "אף אחד לא האמין שבנו את כל זה רק בחודש אחד.",
+      "word_count": 11,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.0909
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.0909
+        }
+      }
+    },
+    {
+      "id": "llm1_79",
+      "sentence": "שכחו להשאיר גישה לנכים כשבנו את הכניסה הצדדית.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_80",
+      "sentence": "השכנים כעסו ובנו גדר משלהם, גבוהה יותר.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_81",
+      "sentence": "שילמתי על הקפה כמה גרושים וזה היה שווה כל אגורה.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1
+        }
+      }
+    },
+    {
+      "id": "llm1_82",
+      "sentence": "הוא מכר את הספרים הישנים שלו בגרושים.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_83",
+      "sentence": "קיבלתי תוספת של גרושים בתלוש, זה אפילו לא מורגש.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1111
+        }
+      }
+    },
+    {
+      "id": "llm1_84",
+      "sentence": "לא משתלם לעבוד שעות נוספות בשביל גרושים.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_85",
+      "sentence": "הוא בזבז את זמנו ואת כישרונו בשביל כמה גרושים.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1111
+        }
+      }
+    },
+    {
+      "id": "llm1_86",
+      "sentence": "בשכונה הזו משכירים חדרים בגרושים יחסית למרכז העיר.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_87",
+      "sentence": "השקענו הרבה זמן כדי לחסוך כמה גרושים מיותרים.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_88",
+      "sentence": "בשוק אפשר למצוא בגדים במצב מצוין ממש בגרושים.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_89",
+      "sentence": "לא שווה לריב איתו בשביל גרושים, תן לו כבר.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1111
+        }
+      }
+    },
+    {
+      "id": "llm1_90",
+      "sentence": "השקענו הרבה זמן כדי לחסוך כמה גרושים מיותרים.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_91",
+      "sentence": "ההורים שלי גרושים כבר חמש עשרה שנה ומסתדרים היטב.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_92",
+      "sentence": "קבוצת התמיכה מיועדת לגרושים וגרושות שמחפשים התחלה חדשה.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_93",
+      "sentence": "באירוע פגשתי כמה גרושים שדיברו על החיים אחרי הנישואין.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2222
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_94",
+      "sentence": "הם גרושים כבר שנתיים, אבל עדיין מתווכחים על כל דבר.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_95",
+      "sentence": "רוב האנשים בקורס היו גרושים בגילאי ארבעים פלוס.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_96",
+      "sentence": "אחרי שהם הפכו לגרושים, כל אחד מהם פנה לכיוון שונה לגמרי.",
+      "word_count": 11,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_97",
+      "sentence": "הגרושים החדשים לא תמיד מבינים מה מחכה להם.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_98",
+      "sentence": "אנחנו גרים בשכונה עם הרבה משפחות חד־הוריות וגרושים.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_99",
+      "sentence": "לגרושים חדשים מומלץ לפנות לייעוץ מקצועי כדי להקל על המעבר.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_100",
+      "sentence": "לגרושים האלה יש ילדים משותפים, אז הם נפגשים די הרבה.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_101",
+      "sentence": "המיני-קיט שברשותי כולל את כל האביזרים הדרושים.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_102",
+      "sentence": "במסעדה הגישו מיני קרואסונים חמים",
+      "word_count": 5,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.4
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.2
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.2
+        }
+      }
+    },
+    {
+      "id": "llm1_103",
+      "sentence": "הם הציגו מיני-פרויקט במסגרת תערוכה מקומית.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_104",
+      "sentence": "במסעדה הגישו מיני פיצות אישיות בטעמים שונים.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_105",
+      "sentence": "\"מחופשים\" - מתפתחת כמיני סדרה מוצלחת בהחלט",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1667
+        }
+      }
+    },
+    {
+      "id": "llm1_106",
+      "sentence": "למיני־סנטר הזעיר הזה יש שירות לקוחות אישי ומדויק.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_107",
+      "sentence": "וכשהוסיפו מיני־בר בסלון, האירוח הפך לאינטימי במיוחד.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced_text": {
+          "errors": 2,
+          "wer": 0.2857
+        }
+      }
+    },
+    {
+      "id": "llm1_108",
+      "sentence": "היא קנתה חצאית מיני מבד ג'ינס לארוחת ערב עם חברים.",
+      "word_count": 11,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.0909
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.0909
+        },
+        "phonikud_enhanced_text": {
+          "errors": 2,
+          "wer": 0.1818
+        }
+      }
+    },
+    {
+      "id": "llm1_109",
+      "sentence": "המחשב החדש מגיע עם מיני מקלדת אלחוטית קטנה.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_110",
+      "sentence": "היא לבשה חצאית מיני ג'ינס עם כיסים גדולים כדי לשאת את הטלפון בנוחות.",
+      "word_count": 14,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.0714
+        },
+        "phonikud_enhanced_text": {
+          "errors": 2,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_111",
+      "sentence": "השיח המיני ביניהם הפך פתוח וכנה יותר עם הזמן.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_112",
+      "sentence": "הם ניהלו שיחה פתוחה על הקשר המיני שלהם.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_113",
+      "sentence": "הם שוחחו כאילו כלום לא קורה, אך מבטהם הסגירו משהו כמיני.",
+      "word_count": 11,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.0909
+        }
+      }
+    },
+    {
+      "id": "llm1_114",
+      "sentence": "הם שמרו על קשר מיני בריא לאורך שנים.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_115",
+      "sentence": "הקשר המיני התפתח עם הזמן לחיבור עמוק יותר.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_116",
+      "sentence": "הנושא היה מיני מובהק, אך הוצג בעדינות.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_117",
+      "sentence": "בין השניים התפתח מתח מיני לא מדובר.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_118",
+      "sentence": "אחרי שנים של משיכה, הקשר הפך למיני",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_119",
+      "sentence": "הם בחרו להעמיק את הקשר, גם ברובד המיני.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_120",
+      "sentence": "מאז אותו לילה היא הגדירה את הקשר בינהם - כמיני",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2222
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_121",
+      "sentence": "החוטפים דרשו מההורים כופר בתמורה לשחרור הילד.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_122",
+      "sentence": "כשסירב לשלם את הכופר, נשרף העסק שלו בלילה.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.25
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_123",
+      "sentence": "על פי החשד, נדרש כופר במיליונים כדי להשיב את הציוד.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_124",
+      "sentence": "המבריחים איימו לפגוע בו אם לא יועבר הכופר עד סוף היום.",
+      "word_count": 11,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.0909
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.0909
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_125",
+      "sentence": "לאחר שכופר שולם, כל הצדדים חתמו על הסכם סופי.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_126",
+      "sentence": "בית המשפט אישר את תשלום הכופר בתנאים מחמירים",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_127",
+      "sentence": "הם החליטו לשלם כופר כדי למנוע עונש חמור יותר.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_128",
+      "sentence": "בכופר שנדרש היה סכום גבוה מהרגיל בתיקים מסוג זה.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_129",
+      "sentence": "לכופר שנגבה הייתה השפעה ישירה על המשך ההליכים.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_130",
+      "sentence": "ואחרי תשלום כופר, נחתם ההסכם ונשמר בסודיות.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_131",
+      "sentence": "הם סירבו להושיב בכנסת אדם שכופר בעקרונות המדינה.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_132",
+      "sentence": "הדיון סבב סביב טענות שהועלו נגד כופר מהקהילה המקומית.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.2222
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1111
+        }
+      }
+    },
+    {
+      "id": "llm1_133",
+      "sentence": "היא לא הצליחה להבין איך אפשר לדבר בשבחו של כופר מוצהר.",
+      "word_count": 11,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.0909
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.0909
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_134",
+      "sentence": "לכופר ניתנה הזדמנות להסביר את עמדותיו בפני המועצה.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_135",
+      "sentence": "וכשכופר מתעקש להתבטא בפומבי, המחאה לא מאחרת לבוא.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_136",
+      "sentence": "שום ניסיון לשכנע את הכופר לא הצליח לשנות את דעתו.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_137",
+      "sentence": "על אף שהוא נחשב לכופר, התייחסו אליו בכבוד יחסי.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_138",
+      "sentence": "הכופר המשיך להפיץ רעיונות שסתרו את המסורת המקומית.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_139",
+      "sentence": "אף אחד לא האמין שכופר ידוע יוזמן לטקס הדתי.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 3,
+          "wer": 0.3333
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_140",
+      "sentence": "בדבריו של הכופר היו עקיצות כלפי הממסד הדתי.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_141",
+      "sentence": "במקרר נשאר רק אוכל מוכן מאתמול.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_142",
+      "sentence": "על שולחן העץ הונח אוכל טרי שחיממו זה עתה.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_143",
+      "sentence": "היא לא נגעה באוכל מרוב התרגשות",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_144",
+      "sentence": "לארוחת הצהריים הביאו אוכל פשוט אך טעים.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_145",
+      "sentence": "במקרה הזה אסור להשאיר אוכל בחוץ יותר מדי זמן.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_146",
+      "sentence": "מעדיף אוכל פשוט ולא מתוחכם.",
+      "word_count": 5,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_147",
+      "sentence": "לילדים חולקו מנות אוכל בצבעים שונים.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_148",
+      "sentence": "עם כל המהומה, נשכח לגמרי האוכל על הכיריים.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.25
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_149",
+      "sentence": "לא תמיד יש זמן להכין אוכל ביתי.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_150",
+      "sentence": "ההורים שמחו לראות שילדיהם נהנים מהאוכל שהכינו",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_151",
+      "sentence": "מהאוכל עלו ריחות שהחזירו אותה לילדות.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_152",
+      "sentence": "מתחת לאוכל הסתתר פתק שהפתיע את כולם.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_153",
+      "sentence": "באוכל שהוזמן לא היה כמעט תיבול.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_154",
+      "sentence": "הוא מעדיף אוכל פשוט ולא מתוחכם.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_155",
+      "sentence": "בזמן ההפסקה חילקו אוכל לכל העובדים.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_156",
+      "sentence": "אחרי האימון הביאו אוכל עשיר בחלבון.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_157",
+      "sentence": "כששאלו אותו, אמר שאוכל לא מעניין אותו בכלל.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_158",
+      "sentence": "היא סירבה לגעת באוכל שהוכן ללא רשותה.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_159",
+      "sentence": "למרות העייפות, טרחה והכינה אוכל לכולם.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.3333
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_160",
+      "sentence": "בחדר האוכל נותרו רק שאריות של אוכל מקולקל.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_161",
+      "sentence": "אומר שהוא לא רעב, אבל אחר-כך אוכל את הכול.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_162",
+      "sentence": "כשהוא עייף, גם אוכל פחות מהרגיל.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_163",
+      "sentence": "וכשאוכל ליד אביו, הוא נזהר בכל תנועה.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_164",
+      "sentence": "הוא אוכל לאט כדי ליהנות מכל ביס.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_165",
+      "sentence": "כשהאורחים מגיעים, מי שאוכל תמיד נהנה במיוחד.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_166",
+      "sentence": "שמי שאוכל לאט מצליח להרגיש כל טעם טוב יותר.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_167",
+      "sentence": "כי מי שאוכל ארוחת בוקר מלאה יש לו יותר אנרגיה.",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.2
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_168",
+      "sentence": "מי שאוכל מבלי להסתכל על הצלחת לעיתים מפספס פרטים.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_169",
+      "sentence": "כשהוא אוכל לבד, מרגיש שהוא יכול להתרכז בכל ביס.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_170",
+      "sentence": "ולמרות ששותה ואוכל מהר, הוא מצליח לשמור על הבריאות.",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_171",
+      "sentence": "הוא שותה ואוכל באטיות כדי ליהנות מכל רגע.",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.25
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_172",
+      "sentence": "הוא צופה בטלוויזיה ואוכל חטיפים בלי הפסקה.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_173",
+      "sentence": "הוא מתעורר מוקדם, שותה קפה ואוכל ארוחת בוקר",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_174",
+      "sentence": "למרות שהוא עייף, מתרכז ואוכל בשקט.",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_175",
+      "sentence": "כשהוא מטייל, הוא שותה ואוכל לפי הצורך.",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_176",
+      "sentence": "כשהוא אוכל מעט, היא לעיתים נוטה לא לאכול בכלל",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_177",
+      "sentence": "צפו כיצד שחקן העבר מגיב כשאוכל חטיף חריף במיוחד",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_178",
+      "sentence": "הוא מקיא בכל פעם שאוכל חריף מדי",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_179",
+      "sentence": "הוא מקבל תגובה אלרגית מיידית כשאוכל ביצים",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_180",
+      "sentence": "האדם הרעב מקנא באוכל",
+      "word_count": 4,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.25
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_181",
+      "sentence": "לטעם של התפוח יש ניחוח מיוחד שמזכיר את הקיץ",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.2222
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1111
+        }
+      }
+    },
+    {
+      "id": "llm1_182",
+      "sentence": "היא חיפשה טעם חדש ומרגש במנות של המסעדה",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_183",
+      "sentence": "הטעם המריר של הקפה הערב השאיר רושם עמוק",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_184",
+      "sentence": "בטעם של הרוטב יש עומק בלתי רגיל",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_185",
+      "sentence": "הוא חיפש טעם חדש שמאתגר את החושים",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_186",
+      "sentence": "לטעם המתוק היה חלק מרכזי בארוחה",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_187",
+      "sentence": "הם נהנו מהטעם העשיר של התבשיל",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_188",
+      "sentence": "טעם הפרי רענן ומזמין מאוד",
+      "word_count": 5,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_189",
+      "sentence": "הטעם החריף הוסיף עניין למנה",
+      "word_count": 5,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_190",
+      "sentence": "לטעם המר של הקפה יש ייחוד משלו",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_191",
+      "sentence": "היא לא שכחה את הטעם של העוגה מהמסעדה",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_192",
+      "sentence": "הטעם הייחודי גרם לה להזכר במקום רחוק",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_193",
+      "sentence": "הוא העריך את הטעם העדין של הרוטב",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_194",
+      "sentence": "לטעם המלוח יש מקום מיוחד בזיכרונותיו",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_195",
+      "sentence": "הם דיברו על טעם האוכל במשך שעות",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_196",
+      "sentence": "היא הביאה את הטעם הביתי למטבח החדש",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_197",
+      "sentence": "טעם האוכל הזכיר לה את המסע שהייתה בו",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.25
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.25
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_198",
+      "sentence": "הוא חשב על הטעם המיוחד שגילה בטיול",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_199",
+      "sentence": "הטעם של התבלינים התחבר היטב עם הבשר",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_200",
+      "sentence": "לטעם של התרופה הייתה השפעה לא נעימה על הילדים",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_201",
+      "sentence": "הוא טעם את המרק לפני שהוסיף תבלינים",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_202",
+      "sentence": "כשטעם את הפירות, הבין שהם בשלים",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_203",
+      "sentence": "חיוך התפשט על פניו כשכטעם את הקינוח",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_204",
+      "sentence": "מי שטעם את האוכל ומעריך את האיכות",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_205",
+      "sentence": "הילד טעם לראשונה ממתק חריף ולא אהב את זה",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_206",
+      "sentence": "כשטעם את היין, נפתחה בפניו חוויה חדשה",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_207",
+      "sentence": "לפני שהוסיף תבלינים טעם את המרק",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_208",
+      "sentence": "יש מי שטעם ומעריך את האיכות של האוכל",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_209",
+      "sentence": "כשטעם את המרק, חזר לזכרונות ילדותו",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_210",
+      "sentence": "כשטעם את השוקולד, לא רצה להפסיק לאכול",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_211",
+      "sentence": "הוא תוך כדי מחשבה טעם את התה בשקט",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.25
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_212",
+      "sentence": "הוא הניח את הצלחת וטעם את המנה בעונג",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.25
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_213",
+      "sentence": "הילד הנחית את הכף וטעם את המרק בפעם הראשונה",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_214",
+      "sentence": "הוא נזהר כשטעם את המנה בזהירות",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_215",
+      "sentence": "הוא טעם את המרק בזהירות לפני שהוסיף מלח",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_216",
+      "sentence": "הוא טעם את הלחם הטרי וחש נוסטלגיה נעימה",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_217",
+      "sentence": "כשטעם את התה, הרגיש כיצד הרוגע נכנס לליבו",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_218",
+      "sentence": "כשטעם את האוכל המסורתי, נפתח בפניו עולם חדש",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_219",
+      "sentence": "הוא חשב על המסע שהביא אותו הנה וטעם את המנה המקומית",
+      "word_count": 11,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.0909
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.0909
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_220",
+      "sentence": "הוא טעם את הקפה והרגיש כיצד המרירות מתמזגת עם המתיקות",
+      "word_count": 10,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_221",
+      "sentence": "החקלאי סיפר שהעגבניות מגיעות מחווה אורגנית בצפון",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_222",
+      "sentence": "במעדניה החדשה יש גבינות מתוצרת אורגנית בלבד",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced_text": {
+          "errors": 2,
+          "wer": 0.2857
+        }
+      }
+    },
+    {
+      "id": "llm1_223",
+      "sentence": "הם מחפשים דרך חיים יותר אורגנית ופחות תעשייתית",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_224",
+      "sentence": "המסעדה מציעה תפריט המבוסס על תוצרת אורגנית מקומית",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_225",
+      "sentence": "בחנות הזו כל המוצרים הם מחקלאות אורגנית",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_226",
+      "sentence": "במהלך הסיור הוסבר איך יוצרים קרקע אורגנית עשירה",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 2,
+          "wer": 0.25
+        }
+      }
+    },
+    {
+      "id": "llm1_227",
+      "sentence": "בחנות הטבע הוצגו עשרות מוצרים בתווית אורגנית",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_228",
+      "sentence": "הגינה נבנתה בשיטה אורגנית שמשמרת את המערכת האקולוגית",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.25
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_229",
+      "sentence": "העבודה בקבוצה זרמה בצורה אורגנית בזכות הכימיה בין המשתתפים",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 2,
+          "wer": 0.2222
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_230",
+      "sentence": "החיבור ביניהם התפתח אורגנית בלי כוונה תחילה",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_231",
+      "sentence": "הילד קיבל אורגנית ליום הולדת והתחיל ללמוד לנגן",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_232",
+      "sentence": "הם הביאו אורגנית קטנה כדי לנגן בשירה בציבור",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_233",
+      "sentence": "האורגנית שלו חוברה לרמקול ונשמעה בכל החדר",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 1,
+          "wer": 0.1429
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_234",
+      "sentence": "היא כתבה שיר חדש וניגנה אותו על אורגנית",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_235",
+      "sentence": "הוא אהב את הצליל החם של האורגנית הישנה",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_236",
+      "sentence": "הם קנו אורגנית יד שנייה ותרגלו נגינה כל יום",
+      "word_count": 9,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.1111
+        },
+        "phonikud_enhanced": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced_text": {
+          "errors": 0,
+          "wer": 0.0
+        }
+      }
+    },
+    {
+      "id": "llm1_237",
+      "sentence": "האורגנית החשמלית משמשת אותו גם להקלטות",
+      "word_count": 6,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.1667
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1667
+        }
+      }
+    },
+    {
+      "id": "llm1_238",
+      "sentence": "המוזיקאית עלתה לבמה עם אורגנית קטנה וניידת",
+      "word_count": 7,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud_enhanced": {
+          "errors": 2,
+          "wer": 0.2857
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.1429
+        }
+      }
+    },
+    {
+      "id": "llm1_239",
+      "sentence": "המורה הסביר על הבדלים בין פסנתר רגיל לאורגנית",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
+    {
+      "id": "llm1_240",
+      "sentence": "הילדים ניגשו אחד אחד לנסות לנגן על האורגנית",
+      "word_count": 8,
+      "models": {
+        "roboshaul_nakdimon": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud": {
+          "errors": 0,
+          "wer": 0.0
+        },
+        "phonikud_enhanced": {
+          "errors": 1,
+          "wer": 0.125
+        },
+        "phonikud_enhanced_text": {
+          "errors": 1,
+          "wer": 0.125
+        }
+      }
+    },
     {
       "id": "gold_017_line_048",
       "sentence": "בְּֽעִיקְּבוֹת הַ|יְּשִׁיבָה הַ|הִיא הֻוחְלַט עַל הֲטָלַת סֶ֫גֶר עַל יִשְׂרָאֵל",
